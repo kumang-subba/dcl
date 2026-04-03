@@ -1,9 +1,12 @@
 # Compiler and flags
 CC      = gcc
-CFLAGS  = -Wall -Wextra -Werror -std=c11 -g
+CFLAGS  = -Iinclude -std=c11 -g
 TARGET  = dcl
-SRC     = dcl.c
-OBJ     = $(SRC:.c=.o)
+SRCS     = src/dcl.c \
+					 src/tokenizer.c \
+					 src/common.c		 \
+					 src/buffer.c
+OBJ     = $(SRCS:.c=.o)
 
 all: $(TARGET)
 
