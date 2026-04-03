@@ -2,10 +2,7 @@
 CC      = gcc
 CFLAGS  = -Iinclude -std=c11 -g
 TARGET  = dcl
-SRCS     = src/dcl.c \
-					 src/tokenizer.c \
-					 src/common.c		 \
-					 src/buffer.c
+SRCS     = $(wildcard src/*.c)
 OBJS     = $(SRCS:.c=.o)
 
 all: $(TARGET)
