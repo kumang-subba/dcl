@@ -14,9 +14,6 @@ static int error;
 void dirdcl(char *s)
 {
     int type;
-    printf("\tdirdcl(): tokentype: %c\n", tokentype);
-    printf("\tdirdcl(): tokentype: %d\n", tokentype);
-    printf("\tdirdcl(): token: %s\n\n\n", token);
     if (tokentype == '(') {
         gettoken();
         str_cat(s, dcl());
