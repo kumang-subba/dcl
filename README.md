@@ -27,4 +27,4 @@ argv: pointer to pointer to char
 
 - [ ] Check if data type provided is valid
 - [ ] Add support for type qualifier
-- [ ] Support function parameter without names
+- [x] Support function parameter without names
