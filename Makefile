@@ -15,7 +15,7 @@ $(TARGET): $(OBJS)
 
 # Compile
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $^ -o $@
 
 # Clean build files
 clean:
