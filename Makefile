@@ -6,11 +6,11 @@ SRCS     = src/dcl.c \
 					 src/tokenizer.c \
 					 src/common.c		 \
 					 src/buffer.c
-OBJ     = $(SRCS:.c=.o)
+OBJS     = $(SRCS:.c=.o)
 
 all: $(TARGET)
 
-$(TARGET): $(OBJ)
+$(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^
 
 # Compile
@@ -19,7 +19,7 @@ $(TARGET): $(OBJ)
 
 # Clean build files
 clean:
-	rm -f $(TARGET) $(OBJ)
+	rm -f $(TARGET) $(OBJS)
 
 # Rebuild from scratch
 re: clean all
