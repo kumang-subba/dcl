@@ -12,7 +12,8 @@ static int is_datatype(void)
 {
     if (str_cmp(token, BOOL) == 0 || str_cmp(token, CHAR) == 0 || str_cmp(token, SIGNED) == 0 ||
         str_cmp(token, UNSIGNED) == 0 || str_cmp(token, SHORT) == 0 || str_cmp(token, INT) == 0 ||
-        str_cmp(token, LONG) == 0 || str_cmp(token, FLOAT) == 0 || str_cmp(token, DOUBLE) == 0) {
+        str_cmp(token, LONG) == 0 || str_cmp(token, FLOAT) == 0 || str_cmp(token, DOUBLE) == 0 ||
+        str_cmp(token, VOID) == 0) {
         return 1;
     }
     return 0;

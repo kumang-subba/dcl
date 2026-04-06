@@ -50,8 +50,6 @@ void dirdcl(char *s)
                     }
                     str_cat(s, dcl());
                     str_cat(s, paramtype);
-                    printf("tokentype: %c\n", tokentype);
-                    printf("token: %s\n", token);
                     if (tokentype == ',') {
                         str_cat(s, ", ");
                         gettoken();

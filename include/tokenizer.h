@@ -12,6 +12,7 @@
 #define LONG "long"
 #define FLOAT "float"
 #define DOUBLE "double"
+#define VOID "void"
 
 enum token_type { NAME, PARENS, BRACKETS, PARAMS, DATATYPE };
 
